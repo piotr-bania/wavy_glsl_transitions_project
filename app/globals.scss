@@ -1,0 +1,63 @@
+// Fonts
+@font-face {
+  font-family: 'Monument_Extended_Regular';
+  src: url(../public/fonts/Monument_Extended_Regular.otf);
+}
+
+@font-face {
+  font-family: 'Monument_Extended_Black';
+  src: url(../public/fonts/Monument_Extended_Black.otf);
+}
+
+$header_font: 'Monument_Extended_Black', sans-serif;
+$text_font: 'Monument_Extended_Regular', sans-serif;
+
+$header_1: 80px;
+$header_2: 40px;
+$pargraph: 20px;
+
+// Variables
+$accent: #F9D794;
+$dark: #080309;
+$off_white: #F5F5F5;
+
+// Basics
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+body {
+  background: $dark;
+  color: $off_white;
+  font-family: $text_font;
+  font-size: $pargraph;
+  margin: auto;
+  user-select: none;
+  overflow: hidden;
+}
+
+p {
+  font-size: $pargraph;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.accent {
+  color: $accent;
+}
+
+// Sections
+section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 40px;
+}
